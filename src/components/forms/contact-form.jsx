@@ -30,15 +30,15 @@ const ContactForm = () => {
       </div>
       <div className='mb-30'>
         <input value={values.email} onChange={handleChange} onBlur={handleBlur}
-          name="email" type="email" placeholder="Enter your Mail" />
+          name="email" type="email" placeholder="Enter your E-Mail" />
         {touched.email && <ErrorMsg error={errors.email} />}
       </div>
       <div className='mb-30'>
         <textarea value={values.msg} onChange={handleChange} onBlur={handleBlur} name="msg"
-          placeholder="Enter your Massage"></textarea>
+          placeholder="Enter your Message"></textarea>
         {touched.msg && <ErrorMsg error={errors.msg} />}
       </div>
-      <button type="submit" className="tp-btn-yellow">Send Massage</button>
+      <button type="submit" className="tp-btn-yellow">Send Message</button>
     </form>
   );
 };

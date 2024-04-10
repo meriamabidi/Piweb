@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FooterThree, HeaderSix, Wrapper } from '../../layout';
+import { FooterFour, HeaderFive, Wrapper } from '../../layout';
 import { animationCreate } from '../../utils/utils';
 import Breadcrumb from '../common/breadcrumb/breadcrumb';
 import ContactArea from './contact-area';
@@ -15,10 +15,10 @@ const Contact = () => {
 
   return (
     <Wrapper>
-      <HeaderSix />
-      <Breadcrumb title={'Contact'} />
+      <HeaderFive/>
+      {/*<Breadcrumb title={'Contact'} />*/}
       <ContactArea/>
-      <FooterThree />
+      <FooterFour />
     </Wrapper>
   );
 };

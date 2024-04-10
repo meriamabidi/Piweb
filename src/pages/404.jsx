@@ -1,15 +1,15 @@
 import React from 'react';
 import Breadcrumb from '../components/common/breadcrumb/breadcrumb';
 import SEO from '../components/seo';
-import { FooterThree, HeaderSix, Wrapper } from '../layout';
+import { FooterThree, HeaderFive, Wrapper } from '../layout';
 
 const ErrorPage = () => {
   return (
     <Wrapper>
       <SEO pageTitle={'Not Found'} />
-      <HeaderSix />
-      <Breadcrumb title={'404 Page'} back_home={true} />
-      {/* <!--404-area-start --> */}
+      <HeaderFive/>
+      {/*      <Breadcrumb title={'404 Page'} back_home={true} />
+<!--404-area-start --> */}
       <div className="tp-404-area tp-404-circle sky-bg pt-200 pb-150 fix">
         <div className="container">
           <div className="row">

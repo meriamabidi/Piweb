@@ -13,7 +13,7 @@ const contents = {
   highlight_text: ' for your musical advancement.',
   text_1: 'Our tailored programs, expert guidance, and commitment to excellence ensure that every student receives the finest education and support to reach their full potential in the world of music.',
   text_2: 'At El Kindy Conservatory, we offer unparalleled solutions for your musical growth and development.',
-  btn_text: 'More About Us'
+  btn_text: 'More about us'
 }
 
 const { btn_text, feature_bg, highlight_text, shapes, subtitle, text_1, text_2, title } = contents;
@@ -73,7 +73,7 @@ const FeatureArea = () => {
               <p className="pb-25">{text_1}</p>
               <p className="pb-20">{text_2}</p>
               <div className="tp-fea-button-five">
-                <Link href="/contact">
+                <Link href="/about">
                   <a className="tp-btn-sky">{btn_text}</a>
                 </Link>
               </div>

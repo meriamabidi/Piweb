@@ -17,20 +17,20 @@ const BlogForm = () => {
     <form onSubmit={handleSubmit}>
       <div className='mb-30'>
         <input name='name' value={values.name} onChange={handleChange} onBlur={handleBlur}
-          type="text" placeholder="Company name" />
+          type="text" placeholder="Enter your Name" />
         {touched.name && <ErrorMsg error={errors.name} />}
       </div>
       <div className='mb-30'>
         <input name='email' value={values.email} onChange={handleChange} onBlur={handleBlur}
-          type="email" placeholder="Enter your mail" />
+          type="email" placeholder="Enter your E-mail" />
         {touched.email && <ErrorMsg error={errors.email} />}
       </div>
       <div className='mb-30'>
         <textarea name='msg' value={values.msg} onChange={handleChange} onBlur={handleBlur}
-          placeholder="Enter your massage"></textarea>
+          placeholder="Enter your Message"></textarea>
         {touched.msg && <ErrorMsg error={errors.msg} />}
       </div>
-      <button className="tp-btn-sky-similar">Send Massage</button>
+      <button className="tp-btn-sky-similar">Send Message</button>
     </form>
   );
 };

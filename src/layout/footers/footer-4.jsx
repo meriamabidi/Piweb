@@ -6,17 +6,17 @@ import CopyrightArea from './component/copyright-area';
 const footer_contents = {
   shapes: ['hero-shape-5.1.png', 'testimonial-shape-5.4.png'],
   logo: '/assets/img/logo/logo-blue.png',
-  widget_desc: 'A new way to make the payments easy, reliable and 100% secure. claritatem itamconse quat. Exerci tationulla',
+  widget_desc: 'Discover a seamless, reliable, and 100% secure payment experience at El Kindy Conservatory. Simplifying transactions for your peace of mind.',
   footer_widgets: [
     {
       w_class: 'd-flex justify-content-lg-center',
       title: 'Useful Links',
-      widget_lists: ['Contact us', 'How it Works', 'Create', 'Explore', 'Terms & Services']
+      widget_lists: ['Contact us', 'About us', 'Home', 'Q & A']
     },
     {
       padd: 'pl-20',
       title: 'Community',
-      widget_lists: ['Help Center', 'Partners', 'Suggestions', 'Blog', 'Newsletters']
+      widget_lists: ['Help Center', 'Our Team', 'Events']
     },
   ],
   subscribe_title: 'Subscribe Newslatter',
@@ -29,7 +29,7 @@ const { conditions, copy_right_text, footer_widgets, logo, widget_desc, subscrib
 
 const FooterFour = () => {
   return (
-    <footer>
+    <footer >
       <div className="tp-footer-area pt-130 pb-30 p-relative">
         {shapes.map((s, i) => (
           <div key={i} className={`bp-foooter-shape-${i + 1} d-none d-lg-block`}>
@@ -37,12 +37,12 @@ const FooterFour = () => {
           </div>
         ))}
         <div className="container">
-          <div className="row wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".5s">
+          <div className="copyright-border pt-40 row wow tpfadeUp"  data-wow-duration=".3s" data-wow-delay=".5s">
             <div className="col-xl-3 col-lg-4 col-md-6">
               <div className="tp-footer-widget">
                 <div className="tp-footer-widget__logo mb-30">
                   <Link href="/">
-                    <a><img src={logo} alt="" /></a>
+                    <a><img src={logo} alt="" style={{height:"100px", width:"100px"}} /></a>
                   </Link>
                 </div>
                 <div className="tp-footer-widget__text mb-30">
@@ -68,27 +68,12 @@ const FooterFour = () => {
                 </div>
               </div>
             })}
-            <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="tp-footer-widget">
-                <div className="tp-footer-widget__title pb-15">
-                  <h3 className="footer-title text-black">{subscribe_title}</h3>
-                </div>
-                <div className="tp-footer-widget__text mb-55">
-                  <p>{subscribe_text}</p>
-                </div>
-                <div className="tp-footer-widget__input tp-input-white">
-                  <form onSubmit={e => e.preventDefault()}>
-                    <input type="text" placeholder="Enter Mail" />
-                    <button type="submit"><i className="fas fa-paper-plane"></i></button>
-                  </form>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
-        {/* CopyrightArea start */}
+        {/* CopyrightArea start 
         <CopyrightArea copy_right_text={copy_right_text} conditions={conditions} color={'tp-copyright-color'} />
-        {/* CopyrightArea end */}
+         CopyrightArea end */}
       </div>
     </footer>
   );

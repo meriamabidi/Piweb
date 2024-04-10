@@ -33,13 +33,15 @@ const HeaderFive = () => {
               <div className="col-xxl-4 col-xl-3 col-lg-3">
                 <div className="tp-header-left d-flex align-items-center justify-content-end ">
                   <ul className="d-none d-xxl-block">
+                  <li>
+                      <Link href="/about-me">
+                        <a className="#"><i className="far fa-user fa-user"></i> Profile</a>
+                      </Link>
+                    </li>
                     <li>
                       <Link href="/login">
                         <a className="#"><i className="far fa-user fa-user"></i> Login</a>
                       </Link>
-                    </li>
-                    <li><a className="#" href="#">EN<i className="fal fa-arrow-down arrow-down"></i></a>
-                      <Languages />
                     </li>
                   </ul>
                   <div className="tp-header-yellow-button">
